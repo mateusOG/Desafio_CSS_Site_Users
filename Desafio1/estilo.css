@@ -1,0 +1,153 @@
+
+:root { 
+    --primary-color: #e6e9f8;
+    --secont-color: #ffffff;
+    --text-color: #131625;
+    --text-color-search: #606166;
+    --text-color-descript: #6E7AC6;
+    --second-color: #869EFF;
+    --border-color: #C9CCD1;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    font-family: "preconnect";
+    font-size: 3.4rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.principal{
+    background-color: var(--secont-color);
+    width: min(120rem, 80%);
+    margin: auto;
+
+    display: grid;
+    padding: 10rem;
+    border-radius: 1.5rem;
+}
+
+legend{
+    font-size: 3.4rem;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.8rem;
+    margin-top: 30px;
+}
+
+.search{
+    font-size: 1.7rem;
+    height: 67px;
+    width: 285px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    color:var(--text-color-search);
+    background-image: url(/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    background-position-x: 10px;
+    padding-left: 40px;
+}
+
+
+.btn-group{
+    display: flex;
+    align-items: center; 
+}
+
+.btn{
+    width: 115px;
+    height: 55px;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    border:0px;
+    background-color: #ffffff;
+}
+
+.btn:focus{
+    background-color: var(--second-color);
+    color: #ffffff;
+}
+
+.listUsers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.users{
+    display: flex;
+    width: 323px;
+    height: 204px;
+    padding: 25px;
+    flex-grow: 1;
+   
+}
+
+.users:hover{
+    border: solid;
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 20px var(--border-color);
+}
+
+
+.users img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50px; 
+    margin-right: 16px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosUsers{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 3rem;
+}
+
+.dados h1{
+    font-size: 1.8rem;
+}
+
+.dados h2{
+    font-size: 1.4rem;
+}
+
+.dados h3{
+    font-size: 1.2rem;
+    color: var(--text-color-descript);
+    margin-right: 4px;
+    padding: 5px;
+    border: solid;
+    border-color: var(--border-color);
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.descript{
+    display: flex;
+    margin-top: 2rem;   
+}
